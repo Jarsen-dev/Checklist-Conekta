@@ -11,9 +11,5 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-}
-div img {
-  width: 243px;
-  height: 57px;
-  flex-shrink: 0;
+  margin: 70, 16, 175;
 }

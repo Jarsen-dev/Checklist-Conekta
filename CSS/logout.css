@@ -12,8 +12,3 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-div img {
-  width: 243px;
-  height: 57px;
-  flex-shrink: 0;
-}

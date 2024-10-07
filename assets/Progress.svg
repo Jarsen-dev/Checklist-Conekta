@@ -1,0 +1,13 @@
+<svg width="142" height="14" viewBox="0 0 142 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1">
+<circle id="Ellipse 1" cx="7" cy="7" r="7" fill="#FF7E00"/>
+<path id="Ellipse 2" d="M110 7C110 10.866 106.866 14 103 14C99.134 14 96 10.866 96 7C96 3.13401 99.134 0 103 0C106.866 0 110 3.13401 110 7Z" fill="white"/>
+<path id="Ellipse 3" d="M78 7C78 10.866 74.866 14 71 14C67.134 14 64 10.866 64 7C64 3.13401 67.134 0 71 0C74.866 0 78 3.13401 78 7Z" fill="white"/>
+<circle id="Ellipse 4" cx="39" cy="7" r="7" fill="white"/>
+<path id="Ellipse 5" d="M142 7C142 10.866 138.866 14 135 14C131.134 14 128 10.866 128 7C128 3.13401 131.134 0 135 0C138.866 0 142 3.13401 142 7Z" fill="white"/>
+<line id="Line 1" x1="14" y1="6.5" x2="32" y2="6.5" stroke="white"/>
+<line id="Line 2" x1="46" y1="6.5" x2="64" y2="6.5" stroke="white"/>
+<line id="Line 3" x1="78" y1="6.5" x2="96" y2="6.5" stroke="white"/>
+<line id="Line 4" x1="110" y1="6.5" x2="128" y2="6.5" stroke="white"/>
+</g>
+</svg>
