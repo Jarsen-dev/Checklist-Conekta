@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Camionetas Hilux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1,
+    h2 {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Checklist Camionetas Hilux</h1>
+  <form action="/guardar_checklist" method="POST">
+
+    <div class="section">
+      <h2>Seleccionar Camioneta</h2>
+      <label for="camioneta">Camioneta:</label>
+      <select name="camioneta" id="camioneta" required>
+        <option value="Camioneta1">Camioneta 1 - Hilux</option>
+        <option value="Camioneta2">Camioneta 2 - Hilux</option>
+        <option value="Camioneta3">Camioneta 3 - Hilux</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Técnico encargado</h2>
+      <label for="tecnico">Técnico encargado del día:</label>
+      <input type="text" name="tecnico" id="tecnico" required>
+    </div>
+
+    <div class="section">
+      <h2>Herramienta</h2>
+      <label><input type="checkbox" name="herramienta[]" value="Escalera grande"> Escalera grande</label>
+      <label><input type="checkbox" name="herramienta[]" value="Extensión de luz"> Extensión de luz</label>
+      <label><input type="checkbox" name="herramienta[]" value="½ con matraca"> ½ con matraca</label>
+      <label><input type="checkbox" name="herramienta[]" value="Escalera tijera"> Escalera tijera</label>
+      <label><input type="checkbox" name="herramienta[]" value="Triángulo"> Triángulo</label>
+      <label><input type="checkbox" name="herramienta[]" value="9/16 / 14 mm (matraca)"> 9/16 / 14 mm (matraca)</label>
+      <label><input type="checkbox" name="herramienta[]" value="Elásticos sujeta tubos"> Elásticos sujeta tubos</label>
+      <label><input type="checkbox" name="herramienta[]" value="Desarmadores"> Desarmadores</label>
+      <label><input type="checkbox" name="herramienta[]" value="Taladro a corriente"> Taladro a corriente</label>
+      <label><input type="checkbox" name="herramienta[]" value="Pinzas de corte"> Pinzas de corte</label>
+      <label><input type="checkbox" name="herramienta[]" value="7/8"> 7/8</label>
+      <label><input type="checkbox" name="herramienta[]" value="Taladro inalámbrico"> Taladro inalámbrico</label>
+      <label><input type="checkbox" name="herramienta[]" value="Martillo"> Martillo</label>
+      <label><input type="checkbox" name="herramienta[]" value="13 mm con matraca"> 13 mm con matraca</label>
+      <label><input type="checkbox" name="herramienta[]" value="Kit de dados"> Kit de dados</label>
+      <label><input type="checkbox" name="herramienta[]" value="Nivel"> Nivel</label>
+      <label><input type="checkbox" name="herramienta[]" value="Brocas"> Brocas</label>
+      <label><input type="checkbox" name="herramienta[]" value="Cincel"> Cincel</label>
+      <label><input type="checkbox" name="herramienta[]" value="Cables de paso de corriente"> Cables de paso de
+        corriente</label>
+      <label><input type="checkbox" name="herramienta[]" value="Guía"> Guía</label>
+      <label><input type="checkbox" name="herramienta[]" value="Perica"> Perica</label>
+      <label><input type="checkbox" name="herramienta[]" value="Franelas para limpieza"> Franelas para limpieza</label>
+      <label><input type="checkbox" name="herramienta[]" value="Lubricante"> Lubricante</label>
+      <label><input type="checkbox" name="herramienta[]" value="Machete"> Machete</label>
+      <label><input type="checkbox" name="herramienta[]" value="Atomizador"> Atomizador</label>
+    </div>
+
+    <div class="section">
+      <h2>Insumos</h2>
+      <label><input type="checkbox" name="insumos[]" value="Alambre"> Alambre</label>
+      <label><input type="checkbox" name="insumos[]" value="Abrazaderas de anillo"> Abrazaderas de anillo</label>
+      <label><input type="checkbox" name="insumos[]" value="Cinchos"> Cinchos</label>
+      <label><input type="checkbox" name="insumos[]" value="Grapas aire 5 mm / 8 mm"> Grapas aire 5 mm / 8 mm</label>
+      <label><input type="checkbox" name="insumos[]" value="Clavos de concreto"> Clavos de concreto</label>
+      <label><input type="checkbox" name="insumos[]" value="Grapas fibra 3 mm"> Grapas fibra 3 mm</label>
+      <label><input type="checkbox" name="insumos[]" value="Clavos de madera"> Clavos de madera</label>
+      <label><input type="checkbox" name="insumos[]" value="Tuercas"> Tuercas</label>
+      <label><input type="checkbox" name="insumos[]" value="Taquetes 3/8 y 5/16"> Taquetes 3/8 y 5/16</label>
+      <label><input type="checkbox" name="insumos[]" value="Pijas"> Pijas</label>
+      <label><input type="checkbox" name="insumos[]" value="Cintas de aislar"> Cintas de aislar</label>
+      <label><input type="checkbox" name="insumos[]" value="Armellas"> Armellas</label>
+      <label><input type="checkbox" name="insumos[]" value="Jack RJ45"> Jack RJ45</label>
+      <label><input type="checkbox" name="insumos[]" value="Expansivos - concreto"> Expansivos - concreto</label>
+      <label><input type="checkbox" name="insumos[]" value="Abrazaderas"> Abrazaderas</label>
+      <label><input type="checkbox" name="insumos[]" value="Plugs"> Plugs</label>
+      <label><input type="checkbox" name="insumos[]" value="Multicontacto"> Multicontacto</label>
+      <label><input type="checkbox" name="insumos[]" value="Inversor"> Inversor</label>
+      <label><input type="checkbox" name="insumos[]" value="Regulador"> Regulador</label>
+    </div>
+
+    <div class="section">
+      <h2>Gasolina y Vehículo</h2>
+      <label for="gasolina">Gasolina ($):</label>
+      <input type="number" name="gasolina" id="gasolina" step="0.01"><br>
+
+      <label for="kms">Kilómetros (Kms):</label>
+      <input type="number" name="kms" id="kms"><br>
+
+      <label for="nivel_gasolina">Nivel de gasolina:</label>
+      <input type="text" name="nivel_gasolina" id="nivel_gasolina"><br>
+
+      <label for="revision_liquidos">Revisión de líquidos:</label>
+      <select name="revision_liquidos" id="revision_liquidos">
+        <option value="Completo">Completo</option>
+        <option value="Incompleto">Incompleto</option>
+      </select><br>
+
+      <label for="limpieza_vehiculo">Limpieza del vehículo:</label>
+      <select name="limpieza_vehiculo" id="limpieza_vehiculo">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Fotoevidencia</h2>
+      <label for="foto_evidencia">¿Se tomaron foto evidencias?</label>
+      <select name="foto_evidencia" id="foto_evidencia">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h2>Semana</h2>
+      <label><input type="checkbox" name="dia[]" value="Lunes"> Lunes</label>
+      <label><input type="checkbox" name="dia[]" value="Martes"> Martes</label>
+      <label><input type="checkbox" name="dia[]" value="Miércoles"> Miércoles</label>
+      <label><input type="checkbox" name="dia[]" value="Jueves"> Jueves</label>
+      <label><input type="checkbox" name="dia[]" value="Viernes"> Viernes</label>
+      <label><input type="checkbox" name="dia[]" value="Sábado"> Sábado</label>
+    </div>
+
+    <div class="section">
+      <h2>Detalles del Vehículo y Conductores</h2>
+      <label for="periodo">Periodo:</label>
+      <input type="text" name="periodo" id="periodo"><br>
+
+      <label for="supervisor">Supervisor:</label>
+      <input type="text" name="supervisor" id="supervisor"><br>
+
+      <label for="destino">Destino:</label>
+      <input type="text" name="destino" id="destino"><br>
+
+      <label for="conductor">Conductor:</label>
+      <input type="text" name="conductor" id="conductor"><br>
+    </div>
+
+    <div class="section">
+      <h2>Observaciones</h2>
+      <label for="observaciones">Observaciones adicionales:</label><br>
+      <textarea name="observaciones" id="observaciones" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>Efectividad del Técnico</h2>
+      <label for="efectividad">Evaluar la efectividad del técnico (1-10):</label>
+      <input type="number" name="efectividad" id="efectividad" min="1" max="10" required>
+    </div>
+
+    <button type="submit">Enviar Checklist</button>
+  </form>
+</body>
+
+</html>
