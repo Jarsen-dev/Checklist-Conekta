@@ -105,8 +105,8 @@
           id="onu"></label>
       <label for="rosettes"><input type="checkbox" name="materials" value="Rosetas" id="rosettes">ROSETAS CANT: <input
           type="text" id="rosettes"></label>
-      <label for="patchcord"><input type="checkbox" name="materials" value="Patchcord" id="patchcord">PATCHCORD CANT:
-        <input type="text" id="patchcord"></label>
+      <label for="patchcore"><input type="checkbox" name="materials" value="Patchcore" id="patchcore">PATCHCORE CANT:
+        <input type="text" id="patchcore"></label>
       <label for="mini-closures"><input type="checkbox" name="materials" value="Mini cierres" id="mini-closures">MINI
         CIERRES DE EMPALME CANT:
         <input type="text" id="mini-closures"></label>
@@ -344,7 +344,7 @@
       </figure>
       <div>
         <h2>HERRAMIENTAS</h2>
-        <img src="../assets/Progress_3.svg" alt="barra de progresión">
+        <img src="../assets/Progress_2.svg" alt="barra de progresión">
       </div>
     </div>
     <main>
@@ -392,7 +392,7 @@
       </figure>
     </div>
   </section>
-  <section class="air-tools">
+  <section class="fussion-tools">
     <div>
       <figure>
         <img src="../assets/Arrow_left.svg" alt="flecha izquierda">
@@ -403,29 +403,140 @@
       </div>
     </div>
     <main>
-      <label for="punching"><input type="checkbox" name="tools" value="Ponchadora" id="punching">PONCHADORA:
-        <label for="tec1">TEC 1: <input type="text" id="tec1"></label><label for="tec2"> TEC 2: <input type="text"
-            id="tec2"></label></label>
-      <label for="elastics"><input type="checkbox" name="tools" value="Elásticos" id="drill">ELÁSTICOS CANT: <input
-          type="text" id="elastics"></label>
-      <label for="big-ladder"><input type="checkbox" name="tools" value="Escalera grande" id="big-ladder">ESCALERA
-        GRANDE</label>
-      <label for="small-ladder"><input type="checkbox" name="tools" value="Escalera tijera" id="small-ladder">ESCALERA
-        DE TIJERA</label>
-      <label for="hammer"><input type="checkbox" name="tools" value="Martillo" id="hammer">MARTILLO</label>
-      <label for="tweezers"><input type="checkbox" name="tools" value="Pinzas" id="tweezers">PINZAS</label>
-      <label for="laptop"><input type="checkbox" name="tools" value="Laptop" id="laptop">LAPTOP</label>
-      <label for="guide"><input type="checkbox" name="tools" value="Guía" id="guide">GUÍA</label>
-      <label for="key"><input type="checkbox" name="tools" value="Llave 13 / 14 mm" id="key">LLAVE 13 / 14 MM CON
-        MATRACA</label>
-      <label for="big-trill"><input type="checkbox" name="tools" value="Taladro a corriente" id="big-trill">TALADRO A
-        CORRIENTE</label>
-      <label for="small-trill"><input type="checkbox" name="tools" value="Taladro inalámbrico" id="small-trill">TALADRO
-        INALÁMBRICO</label>
-      <label for="screwdrivers"><input type="checkbox" name="tools" value="Desarmadores"
-          id="screwdrivers">DESARMADORES</label>
-      <label for="extension"><input type="checkbox" name="tools" value="Extensión de luz" id="extension">EXTENSIÓN DE
-        LUZ</label>
+      <label for="fusing-machine"><input type="checkbox" name="tools" value="Fusionadora"
+          id="fusing-machine">FUSIONADORA: <input type="text" id="fusing-machine"></label>
+      <label for="patchcore"><input type="checkbox" name="tools" value="Patchcore" id="patchcore">PATCHCORE CANT: <input
+          type="text" id="patchcore"></label>
+      <label for="chairs"><input type="checkbox" name="tools" value="Sillas" id="chairs">SILLAS CANT: <input type="text"
+          id="chairs"></label>
+      <label for="fiber-kit"><input type="checkbox" name="tools" value="Kit herramientas fibra" id="fiber-kit">KIT
+        HERRAMIENTAS FIBRA</label>
+      <label for="opm"><input type="checkbox" name="tools" value="Opm" id="opm">OPM (MEDIDOR DE POTENCIA)</label>
+      <label for="otdr"><input type="checkbox" name="tools" value="Otdr" id="otdr">OTDR (PREVENTIVO)</label>
+      <label for="cutter"><input type="checkbox" name="tools" value="Cortadora longitudinal" id="cutter">CORTADORA
+        LONGITUDINAL</label>
+      <label for="razor"><input type="checkbox" name="tools" value="Navaja o exacto" id="razor">NAVAJA O EXACTO</label>
+      <label for="tweezers"><input type="checkbox" name="tools" value="Pinzas" id="tweezers">PINZAS DE CORTE</label>
+      <label for="screwdrivers"><input type="checkbox" name="tools" value="Desarmadores" id="screwdrivers">DESARMADORES
+        (CRUZ Y PALETA)</label>
+      <label for="ladder"><input type="checkbox" name="tools" value="Escalera" id="ladder">ESCALERA</label>
+      <label for="table"><input type="checkbox" name="tools" value="Mesa" id="table">MESA</label>
+      <label for="awning"><input type="checkbox" name="tools" value="Toldo" id="awning">TOLDO</label>
+      <label for="inversor"><input type="checkbox" name="tools" value="Inversor para camioneta" id="inversor">INVERSOR
+        PARA CAMIONETA</label>
+      <label for="traffic-meter"><input type="checkbox" name="tools" value="Medidor de trafico"
+          id="traffic-meter">MEDIDOR DE TRÁFICO</label>
+      <label for="makita"><input type="checkbox" name="tools" value="Makita" id="makita">MAKITA</label>
+    </main>
+    <div>
+      <figure>
+        <img src="../assets/Arrow_right.svg" alt="flecha derecha">
+      </figure>
+    </div>
+  </section>
+  <section class="strapping-tools">
+    <div>
+      <figure>
+        <img src="../assets/Arrow_left.svg" alt="flecha izquierda">
+      </figure>
+      <div>
+        <h2>HERRAMIENTAS</h2>
+        <img src="../assets/Progress_3.svg" alt="barra de progresión">
+      </div>
+    </div>
+    <main>
+      <label for="strapping-machine"><input type="checkbox" name="tools" value="Flejadora"
+          id="strapping-machine">FLEJADORA CANT:
+        <input type="text" id="strapping-machine"></label>
+      <label for="hammer"><input type="checkbox" name="tools" value="Martillo" id="hammer">MARTILLO CANT: <input
+          type="text" id="hammer"></label>
+      <label for="ladder"><input type="checkbox" name="tools" value="Escalera" id="ladder">ESCALERA CANT: <input
+          type="text" id="ladder"></label>
+      <label for="arm"><input type="checkbox" name="tools" value="Brazo" id="arm">BRAZO CANT: <input type="text"
+          id="arm"></label>
+    </main>
+    <div>
+      <figure>
+        <img src="../assets/Arrow_right.svg" alt="flecha derecha">
+      </figure>
+    </div>
+  </section>
+  <section class="tightened-tools">
+    <div>
+      <figure>
+        <img src="../assets/Arrow_left.svg" alt="flecha izquierda">
+      </figure>
+      <div>
+        <h2>HERRAMIENTAS</h2>
+        <img src="../assets/Progress_3.svg" alt="barra de progresión">
+      </div>
+    </div>
+    <main>
+      <label for="carrucha"><input type="checkbox" name="tools" value="Carrucha" id="carrucha">CARRUCHA CANT:
+        <input type="text" id="carrucha"></label>
+      <label for="strapping-machine"><input type="checkbox" name="tools" value="Flejadora"
+          id="strapping-machine">FLEJADORA CANT:
+        <input type="text" id="strapping-machine"></label>
+      <label for="ladder"><input type="checkbox" name="tools" value="Escalera" id="ladder">ESCALERA CANT: <input
+          type="text" id="ladder"></label>
+      <label for="strobe"><input type="checkbox" name="tools" value="Estrobo" id="strobe">ESTROBO</label>
+      <label for="tweezers"><input type="checkbox" name="tools" value="Pinzas de electricista" id="tweezers">PINZAS DE
+        ELECTRICISTA</label>
+      <label for="pole"><input type="checkbox" name="tools" value="Pertiga" id="pole">PERTIGA</label>
+      <label for="pole2"><input type="checkbox" name="tools" value="Pertiga cortadora de ramas" id="pole2">PERTIGA
+        (CORTADORA DE RAMAS)</label>
+    </main>
+    <div>
+      <figure>
+        <img src="../assets/Arrow_right.svg" alt="flecha derecha">
+      </figure>
+    </div>
+  </section>
+  <section class="walk-tools">
+    <div>
+      <figure>
+        <img src="../assets/Arrow_left.svg" alt="flecha izquierda">
+      </figure>
+      <div>
+        <h2>HERRAMIENTAS</h2>
+        <img src="../assets/Progress_2.svg" alt="barra de progresión">
+      </div>
+    </div>
+    <main>
+      <label for="odometer"><input type="checkbox" name="tools" value="Odometro" id="odometer">ODOMETRO</label>
+      <label for="notebook"><input type="checkbox" name="tools" value="Libreta" id="notebook">LIBRETA</label>
+      <label for="map"><input type="checkbox" name="tools" value="Mapa localidad" id="map">MAPA LOCALIDAD
+        (SATELITE)</label>
+      <label for="pencils"><input type="checkbox" name="tools" value="Lapiceros" id="pencils">LAPICEROS VISIBLES</label>
+      <label for="app"><input type="checkbox" name="tools" value="Aplicacion mapinr" id="app">APLICACIÓN MAPINR
+        (INSTALADA EN CELULAR)</label>
+    </main>
+    <div>
+      <figure>
+        <img src="../assets/Arrow_right.svg" alt="flecha derecha">
+      </figure>
+    </div>
+  </section>
+  <section class="reception-tools">
+    <div>
+      <figure>
+        <img src="../assets/Arrow_left.svg" alt="flecha izquierda">
+      </figure>
+      <div>
+        <h2>HERRAMIENTAS</h2>
+        <img src="../assets/Progress_2.svg" alt="barra de progresión">
+      </div>
+    </div>
+    <main>
+      <label for="router"><input type="checkbox" name="tools" value="Router" id="router">ROUTER:
+        <input type="text" id="router"></label>
+      <label for="odometer"><input type="checkbox" name="tools" value="Odometro" id="odometer">ODOMETRO</label>
+      <label for="fusing-machine"><input type="checkbox" name="tools" value="Fusionadora"
+          id="fusing-machine">FUSIONADORA</label>
+      <label for="otdr"><input type="checkbox" name="tools" value="Otdr" id="otdr">OTDR</label>
+      <label for="traffic-meter"><input type="checkbox" name="tools" value="Medidor de trafico"
+          id="traffic-meter">MEDIDOR DE TRÁFICO</label>
+      <label for="makita"><input type="checkbox" name="tools" value="Makita" id="makita">MAKITA</label>
     </main>
     <div>
       <figure>
